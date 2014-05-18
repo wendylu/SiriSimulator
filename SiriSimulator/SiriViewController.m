@@ -81,7 +81,7 @@ typedef enum {
     self.questionImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"question-mark-icon"]];
     frame = self.questionImageView.frame;
     frame.origin.x = 12.0;
-    frame.origin.y = 533.0;
+    frame.origin.y = CGRectGetHeight(self.view.frame) - 12.0 - CGRectGetHeight(self.questionImageView.frame);
     self.questionImageView.frame = frame;
     [self.view addSubview:self.questionImageView];
     self.questionImageView.userInteractionEnabled = YES;
