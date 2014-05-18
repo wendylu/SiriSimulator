@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SiriViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    SiriViewController *rootViewController = [[SiriViewController alloc] init];
+    self.window.rootViewController = rootViewController;
+
     return YES;
 }
 

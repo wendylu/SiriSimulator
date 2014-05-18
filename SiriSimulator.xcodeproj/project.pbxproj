@@ -19,6 +19,12 @@
 		B129D7F019293456006634EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B129D7D819293456006634EA /* UIKit.framework */; };
 		B129D7F819293456006634EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B129D7F619293456006634EA /* InfoPlist.strings */; };
 		B129D7FA19293456006634EA /* SiriSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B129D7F919293456006634EA /* SiriSimulatorTests.m */; };
+		B129D8051929362C006634EA /* SiriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B129D8041929362C006634EA /* SiriViewController.m */; };
+		B129D80C19293675006634EA /* SiriWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = B129D80719293675006634EA /* SiriWaveView.m */; };
+		B129D80D19293675006634EA /* SiriLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B129D80919293675006634EA /* SiriLoadingView.m */; };
+		B129D80E19293675006634EA /* SiriMicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B129D80B19293675006634EA /* SiriMicView.m */; };
+		B129D813192936C0006634EA /* question-mark-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B129D811192936C0006634EA /* question-mark-icon@2x.png */; };
+		B129D814192936C0006634EA /* mic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B129D812192936C0006634EA /* mic@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		B129D7F519293456006634EA /* SiriSimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SiriSimulatorTests-Info.plist"; sourceTree = "<group>"; };
 		B129D7F719293456006634EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B129D7F919293456006634EA /* SiriSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriSimulatorTests.m; sourceTree = "<group>"; };
+		B129D8031929362C006634EA /* SiriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriViewController.h; sourceTree = "<group>"; };
+		B129D8041929362C006634EA /* SiriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriViewController.m; sourceTree = "<group>"; };
+		B129D80619293675006634EA /* SiriWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriWaveView.h; sourceTree = "<group>"; };
+		B129D80719293675006634EA /* SiriWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriWaveView.m; sourceTree = "<group>"; };
+		B129D80819293675006634EA /* SiriLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriLoadingView.h; sourceTree = "<group>"; };
+		B129D80919293675006634EA /* SiriLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriLoadingView.m; sourceTree = "<group>"; };
+		B129D80A19293675006634EA /* SiriMicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriMicView.h; sourceTree = "<group>"; };
+		B129D80B19293675006634EA /* SiriMicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriMicView.m; sourceTree = "<group>"; };
+		B129D811192936C0006634EA /* question-mark-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question-mark-icon@2x.png"; sourceTree = "<group>"; };
+		B129D812192936C0006634EA /* mic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mic@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 				B129D7F319293456006634EA /* SiriSimulatorTests */,
 				B129D7D319293456006634EA /* Frameworks */,
 				B129D7D219293456006634EA /* Products */,
+				B129D815192936C4006634EA /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +126,8 @@
 			children = (
 				B129D7E319293456006634EA /* AppDelegate.h */,
 				B129D7E419293456006634EA /* AppDelegate.m */,
+				B129D80F19293686006634EA /* ViewControllers */,
+				B129D81019293692006634EA /* Views */,
 				B129D7E619293456006634EA /* Images.xcassets */,
 				B129D7DB19293456006634EA /* Supporting Files */,
 			);
@@ -142,6 +161,37 @@
 				B129D7F619293456006634EA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B129D80F19293686006634EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B129D8031929362C006634EA /* SiriViewController.h */,
+				B129D8041929362C006634EA /* SiriViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B129D81019293692006634EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B129D80619293675006634EA /* SiriWaveView.h */,
+				B129D80719293675006634EA /* SiriWaveView.m */,
+				B129D80819293675006634EA /* SiriLoadingView.h */,
+				B129D80919293675006634EA /* SiriLoadingView.m */,
+				B129D80A19293675006634EA /* SiriMicView.h */,
+				B129D80B19293675006634EA /* SiriMicView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B129D815192936C4006634EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B129D811192936C0006634EA /* question-mark-icon@2x.png */,
+				B129D812192936C0006634EA /* mic@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B129D814192936C0006634EA /* mic@2x.png in Resources */,
+				B129D813192936C0006634EA /* question-mark-icon@2x.png in Resources */,
 				B129D7DF19293456006634EA /* InfoPlist.strings in Resources */,
 				B129D7E719293456006634EA /* Images.xcassets in Resources */,
 			);
@@ -239,7 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B129D80D19293675006634EA /* SiriLoadingView.m in Sources */,
+				B129D80E19293675006634EA /* SiriMicView.m in Sources */,
+				B129D80C19293675006634EA /* SiriWaveView.m in Sources */,
 				B129D7E519293456006634EA /* AppDelegate.m in Sources */,
+				B129D8051929362C006634EA /* SiriViewController.m in Sources */,
 				B129D7E119293456006634EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
