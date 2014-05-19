@@ -16,7 +16,6 @@ SiriSimulator requires iOS 7.1 or higher and ARC
 ## About This Project
 
 **SiriSimulator runs on four states:**  
-You can tap the info icon in the lower left corner to test out these states.
 
 `kSiriStateSmallWave` corresponds the intial "resting" state of Siri when it is first activated
     
@@ -25,5 +24,7 @@ You can tap the info icon in the lower left corner to test out these states.
 `kSiriStateLoading` corresponds to the "loading" state of Siri after the user stops speaking
     
 `kSiriStateLoaded` corresponds to the "loaded" state of Siri after it has finished processing and returned a response
+
+You can tap the info icon in the lower left corner to test out these states.
 
 ![Imgur](http://i.imgur.com/P23mvn2.gif)
